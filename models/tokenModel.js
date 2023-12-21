@@ -1,4 +1,6 @@
-import { Schema, model } from "mongoose";
+const mongoose = require("mongoose");
+
+const { Schema, model } = mongoose;
 
 const tokenSchema = Schema({
   userId: {
@@ -21,4 +23,4 @@ const tokenSchema = Schema({
 });
 
 const Token = model("Token", tokenSchema);
-export default Token;
+module.exports = Token;
