@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://pinvent-app.vercel.app"],
+    origin: ["https://akeza-inventory.onrender.com", "https://akeza-inventory.vercel.app/"],
     credentials: true,
   })
 );
